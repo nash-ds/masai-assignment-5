@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: LedgerApplication
+
+    datasource:
+        url: jdbc:postgresql://localhost:5432/flywaydb
+        username: NASHD
+        password: password
+        driver-class-name: org.postgresql.Driver
+
+    jpa:
+        open-in-view: false
+        hibernate:
+            ddl-auto: none
+
+    flyway:
+        enabled: true
